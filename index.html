@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <h1>só mais um site</h1>
+        <h1>pagina de teste</h1>
 
         <nav> <!-- seção de navegação do site. -->
             <ul>
@@ -25,7 +25,7 @@
         <h1>sobre o site</h1>
         <article>
             <p>
-                Olá, este é meu primeiro site, ele é apenas para testes do meu curso, então não espere nada muito complicado por aqui. Pelo menos por enquanto, eu espero.
+                Olá, este é meu primeiro site, ele é apenas para testes do meu curso
             </p>
         </article>
         <aside>
@@ -45,11 +45,55 @@
         <article>
             <h3>portifólho</h3>
             <p>
-                Este foi o meu primeiro site, que desensolvi estudando front-end.
-                Espero conseguir aprender e aprimorar mais esse site com o tempo, se tiver alguma duvida entre em contato.
+                este foi o meu primeiro site, que desensolvi estudando front-end
             </p>
         </article>
     </section>
+
+    <section id="habilidades">
+        <h2>habilidades e tecnologias</h2>
+
+        <table>
+            <tr>
+                <th>Tecnologias</th>
+                <th>Nível</th>
+                <th>Descrição</th>
+            </tr>
+
+            <tbody>
+                <tr>
+                    <td>HTML</td>
+                    <td>iniciante</td>
+                    <td>Capas de construir estruturas de páginas web semanticas e responsivas.</td>
+                </tr>
+
+                <tr>
+
+                    <td>CSS</td>
+                    <td>intermediário</td>
+                    <td>Experiencia com flexbox, grid e animações com CSS.</td>
+
+
+
+                </tr>
+
+                <tr>
+
+                    <td>JAVASCRIPT</td>
+                    <td>básico</td>
+                    <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
+
+
+
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
 
     <footer>
 
@@ -63,6 +107,36 @@
             </address>
         </section>
     </footer>
+    <form action=" ">
+
+        <label for="nome">nome: </label>
+        <input type="text" id="nome" name="nome" required> <br>
+
+        <label for="email">email: </label>
+        <input type="email" id="email" name="email" required> <br>
+
+        <label for="telefone">telefone: </label>
+        <input type="tel" id="telefone" name="telefone" required> <br>
+
+        <label for="assunto">assunto</label>
+        <select name="assunto" id="assunto">
+            <option value="orçamento">orçamento</option>
+            <option value="duvida">dúvida</option>
+            <option value="outro">outro</option>
+        </select>
+
+        <br>
+
+        <label for="menssagem">Menssagem</label>
+        <textarea name="menssagem" id="menssagem" cols="30" rows="10" required></textarea>
+        <br>
+        <input type="checkbox" id="inscrricao" name="inscrricao">
+        <label for="inscrricao">Deseja receber minha Newletter? Fique por dentro.</label>
+        <br>
+
+        <input type="submit" value="enviar menssagem">
+
+    </form>
 </body>
 
 </html>
