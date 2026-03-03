@@ -9,149 +9,101 @@
 </head>
 
 <body>
+
     <header>
-        <h1 style=" color: blueviolet;
-    margin: 10px;
-padding: 10px;
-border: 10px solid #000; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Só mais um site</h1>
+        <h1>Só mais um site</h1>
 
-        <nav> <!-- seção de navegação do site. -->
-            <ul style="font-size: x-large;">
-                <li>sobre o site</li>
-                <li>projetos</li>
-                <li><a href="#contato">contato</a></li>
-
-
-            </ul><!-- lista não ordenada para links do nosso menu. -->
+        <nav>
+            <ul>
+                <li>Sobre o site</li>
+                <li>Projetos</li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
         </nav>
     </header>
-    <section style=" color: #1E3a8a;
-    margin: 10px;
-padding: 10px;
-border: 1px solid #000;">
-        <h1>sobre o site</h1>
+
+    <section>
+        <h2>Sobre o site</h2>
+
         <article class="coisas">
-            <img  class="imagem-flutuante" src="https://facedigital.com.br/wp-content/uploads/2025/01/img-blog-face-digital-develop-768x410.png">
+            <img class="imagem-flutuante"
+                src="https://facedigital.com.br/wp-content/uploads/2025/01/img-blog-face-digital-develop-768x410.png"
+                alt="Imagem ilustrativa">
+
             <p>
-                Olá, este é meu primeiro site, ele é apenas para testes do meu curso, então vai ser visto algumas mudanças com o tempo.
+                Olá, este é meu primeiro site. Ele é apenas para testes do meu curso,
+                então você verá algumas mudanças com o tempo.
             </p>
         </article>
-        <aside>
 
-            <h3>habilidades</h3>
+        <aside>
+            <h3>Habilidades</h3>
             <ul>
-                <li>html</li>
-                <li>css</li>
-                <li>javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
             </ul>
         </aside>
     </section>
 
-    <section style=" color: blueviolet;
-    margin: 10px;
-padding: 10px;
-border: 1px solid #000;">
+    <section>
+        <h2>Projetos</h2>
 
-        <h1>projetos</h1>
         <article>
-            <h3 style="color: #1E3a8a;">portifólho</h3>
+            <h3>Portfólio</h3>
             <p>
-                Este foi o meu primeiro site, que desensolvi estudando front-end, então por enquanto nada muito complicado por aqui.
-                OBS:Se tiver alguma dica, instruções, qualquer coisa entre em contato.
+                Este foi meu primeiro site estudando front-end.
+                Se tiver alguma dica, entre em contato.
             </p>
         </article>
     </section>
 
-    <section id="habilidades" style=" color: blueviolet;
-    margin: 10px;
-padding: 10px;
-border: 1px solid #000;">
-        <h2>habilidades e tecnologias</h2>
-
-        <table>
-            <tr>
-                <th>Tecnologias</th>
-                <th>Nível</th>
-                <th>Descrição</th>
-            </tr>
-
-            <tbody>
-                <tr>
-                    <td>HTML</td>
-                    <td>iniciante</td>
-                    <td>Capas de construir estruturas de páginas web semanticas e responsivas.</td>
-                </tr>
-
-                <tr>
-
-                    <td>CSS</td>
-                    <td>intermediário</td>
-                    <td>Experiencia com flexbox, grid e animações com CSS.</td>
-
-
-
-                </tr>
-
-                <tr>
-
-                    <td>JAVASCRIPT</td>
-                    <td>básico</td>
-                    <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
-
-
-
-
-                </tr>
-
-            </tbody>
-
-        </table>
-
-    </section>
-
-
     <footer>
 
-        <p style="color: blue;">direitos reservados a Gabriel Gotardo</p>
+        <p>Direitos reservados a Gabriel Gotardo</p>
 
         <section id="contato">
-            <h2>contato</h2>
-            <p>Tem um projeto em mente? Entre em contato</p>
+            <h2>Contato</h2>
+            <p>Tem um projeto em mente? Entre em contato.</p>
+
+            <form>
+
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                <label for="assunto">Assunto:</label><br>
+                <select id="assunto" name="assunto">
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Deseja receber minha newsletter?</label><br><br>
+
+                <input type="submit" value="Enviar mensagem">
+
+            </form>
+
             <address>
-                E-mail: <a href="mailto:gabrielgotardo23@yahoo.com">gabrielgotardo23@yahoo.com</a>
+                E-mail:
+                <a href="mailto:gabrielgotardo23@yahoo.com">
+                    gabrielgotardo23@yahoo.com
+                </a>
             </address>
         </section>
+
     </footer>
-    <form action=" ">
 
-        <label for="nome">nome: </label>
-        <input type="text" id="nome" name="nome" required> <br>
-
-        <label for="email">email: </label>
-        <input type="email" id="email" name="email" required> <br>
-
-        <label for="telefone">telefone: </label>
-        <input type="tel" id="telefone" name="telefone" required> <br>
-
-        <label for="assunto">assunto</label>
-        <select name="assunto" id="assunto">
-            <option value="orçamento">orçamento</option>
-            <option value="duvida">dúvida</option>
-            <option value="outro">outro</option>
-        </select>
-
-        <br>
-
-        <label for="menssagem">Menssagem</label>
-        <textarea name="menssagem" id="menssagem" cols="30" rows="10" required></textarea>
-        <br>
-        <input type="checkbox" id="inscrricao" name="inscrricao">
-        <label for="inscrricao">Deseja receber minha Newletter? Fique por dentro.</label>
-        <br>
-
-        <input type="submit" value="enviar menssagem">
-
-    </form>
 </body>
 
 </html>

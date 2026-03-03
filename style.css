@@ -1,48 +1,121 @@
+/* Reset básico */
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* Corpo */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1E3A8A;
+}
 
+/* Header */
+header {
+    padding: 20px;
+    border-bottom: 2px solid #000;
+}
 
 h1 {
-    color: #1E3a8a;
-    margin: 10px;
-padding: 10px;
-border: 5px solid #000; 
+    margin-bottom: 10px;
 }
 
-h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: red;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-th {
-    color: #1E3a8a
+nav a {
+    text-decoration: none;
+    color: #1E3A8A;
 }
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #1E3a8a;
+
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #000;
 }
-td {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #1E3a8a;
-} 
+
+/* Imagem flutuante */
 .imagem-flutuante {
     float: right;
     width: 250px;
     max-width: 100%;
     height: auto;
-    margin: 20px;
+    margin: 0 0 15px 20px;
 }
 
+/* Corrige quebra de float */
+.coisas::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin: 20px;
+    border-top: 2px solid #000;
+}
+
+footer p {
+    color: blue;
+    margin-bottom: 10px;
+}
+
+/* Contato */
+#contato {
+    margin-top: 20px;
+}
+
+#contato a {
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contato a:hover {
+    text-decoration: underline;
+}
+
+/* Formulário */
+form input,
+form select,
+form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #1E3A8A;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #163172;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .imagem-flutuante {
         float: none;
         display: block;
-        margin: 20px auto;
         width: 100%;
+        margin: 20px auto;
     }
-}
-.coisas {
-    clear: both;
 }
