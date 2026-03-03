@@ -5,7 +5,10 @@
 
 
 h1 {
-    color: blueviolet;
+    color: #1E3a8a;
+    margin: 10px;
+padding: 10px;
+border: 5px solid #000; 
 }
 
 h2 {
@@ -14,11 +17,21 @@ h2 {
 }
 
 th {
-    color: purple;
+    color: #1E3a8a
 }
 p {
     font-family: Arial, Helvetica, sans-serif;
+    color: #1E3a8a;
 }
 td {
     font-family: Arial, Helvetica, sans-serif;
+    color: #1E3a8a;
+} 
+.imagem-flutuante {
+    float: right;
+    width: 250px;
+margin: 20px
+}
+.coisas {
+    clear: both;
 }
